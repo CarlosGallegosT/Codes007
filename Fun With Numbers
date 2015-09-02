@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x;
+  int y;
+  int Sum;
+  int Difference;
+  int Product;
+  int Division;
+  int Remainer;
+  std::cout << "Enter an integer: ";
+  std::cin >> x;
+  std::cout << std::endl;
+  std::cout << "Enter another integer: ";
+  std::cin  >> y;
+  std::cout << std::endl;
+  Sum= x+y;
+  Difference= x-y;
+  Division= x/y;
+  Product= x*y;
+  Remainer= (x % y);
+  std::cout << "The sum of the numbers is: " << Sum << std::endl;
+  std::cout << "The difference of the numbers is: " << Difference << std::endl;
+  std::cout << "The product of the numbers is: " << Product << std::endl;
+  std::cout << "The integer division is: " << Division << std:: endl;
+  std::cout << "The remainer of the division is: " << Remainer << std::endl;
+}
