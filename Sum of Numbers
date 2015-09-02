@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int x;
+int y;
+int S;
+
+void Sum(int x, int y){
+while (x<=y){
+  S=S+x;
+  x=x+1;
+}
+}
+
+int main(){
+std::cout << "This program will calculate the sum of a range of integers." << std::endl;
+std::cout << "Enter the lower bound: "; std::cin >> x;
+std::cout << "Enter the upper bound: "; std::cin >> y;
+std::cout << std::endl;
+if (x<=y) {
+  Sum(x,y);
+}
+else {
+  std::cout << "Wrong input, by flipping the bounds ";
+  Sum(y,x);
+}
+std::cout << "The Value is: " << S << std::endl;
+return 0;
+}
