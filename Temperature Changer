@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int F;
+int C;
+
+int main(){
+  std::cout << "What is the temperature in Fahrenheit? ";
+  std::cin >> F;
+  std::cout << std::endl;
+  C= 5*(F-32)/9;
+  std::cout << "A temperature of: " << F << " degrees Farenheit equals to: " << C << " degrees Celsius." << std::endl <<std::endl;
+  if (C >= 100){
+      std::cout << "Water boils at this temperature (under normal circunstances).";
+    }
+  else if(C <= 0){
+      std::cout << "Water freezes at this temperature under normal circunstances.";
+    }
+  else  {
+      std::cout << "Water is liquid at this temperature under normal circunstances.";
+  }
+  return 0;
+}
