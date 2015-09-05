@@ -2,28 +2,23 @@
 using namespace std;
 
 int Sum(int a, int b){
-int Sum= a+b;
-return Sum;
+return a+b;
 }
 
 int Difference(int a, int b){
-int difference= a-b;
-return difference;
+return a-b;
 }
 
 int Division(int a, int b){
-int division= a/b;
-return division;
+return a/b;
 }
 
 int Product(int a, int b){
-int Product= a*b;
-return Product;
+return a*b;
 }
 
 int Remainer(int a, int b){
-int R= a%b;
-return R;
+return a%b;
 }
 
 int main() {
