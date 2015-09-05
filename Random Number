@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main(){
+int Guess;
+int Number;
+int Attempts= 0;
+srand(time(0));
+Number= rand()%100 + 1;
+std::cout << "Try to guess a number between 1 and 100 in the less attempts possible. ";
+std::cout << "Please enter an integer: ";
+std::cin >> Guess;
+std::cout << std::endl;
+while (Guess != Number && Guess != 0){
+if (Guess < Number ){
+std::cout << "I'm sorry but " << Guess << " is too low, try again ";
+std::cin >> Guess;
+}
+else if (Guess > Number){
+  std::cout << "I'm sorry but " << Guess << " is too high, try again. ";
+  std::cin >> Guess;
+}
+
+Attempts=Attempts +1;
+}
+std::cout << "Congratulations you guessed the number! Number of attemps: " << Attempts;
+return 0;
+}
