@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+bool Repeat = 1;
+int n;
+char Do;
+
+int FactCal(int x){
+  int R= 1;
+  while (x>=1){
+    R= R*x;
+    x=x-1;
+  }
+return R;
+}
+
+int main(){
+std::cout << "This is a Factorial Calculator.";
+do {
+  std::cout << "Please enter a positive integer: ";
+  std::cin >> n;
+  std::cout << "The Factorial of the input is: " << FactCal(n) << std::endl;
+  std::cout << "Would you like to enter another value? (y/n) ";
+  std::cin >> Do;
+  if (Do == 'n'){
+    Repeat = 0;
+  }
+} while(Repeat);
+std::cout << "Have a nice day!";
+}
