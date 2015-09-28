@@ -26,4 +26,5 @@ do {
   }
 } while(Repeat);
 std::cout << "Have a nice day!";
+return 0;
 }
