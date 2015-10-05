@@ -5,7 +5,7 @@ int n;
 char Do;
 
 int FactCal(int x){
-  int R= 1;
+  long long R= 1;
   while (x>=1){
     R= R*x;
     x=x-1;
