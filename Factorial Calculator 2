@@ -5,8 +5,8 @@ int n;
 char Do;
 
 int FactCal(int x){
-  int R= 1;
-  for (int y=x; y>=1; y=y-1){
+  long long R= 1;
+  for (int y=x; y>=1; y--){
     R= R*y;
   }
 return R;
