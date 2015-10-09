@@ -3,12 +3,13 @@ using namespace std;
 long x;
 long y;
 
-long long SuperPower2(long a,long b){
+long long SuperPower(long a,long b){
+int c=0;
 if (b==0){
   return 1;
 }
 else {
-  return a*SuperPower2(a,b-1);
+  return a*SuperPower(a,b-1);
 }
 }
 
@@ -18,7 +19,5 @@ std::cin >> x;
 std::cout << "Please enter another integer: ";
 std::cin >> y;
 std::cout << SuperPower(x,y) << std::endl;
-std::cout << SuperPower2(x,y);
-
 return 0;
 }
