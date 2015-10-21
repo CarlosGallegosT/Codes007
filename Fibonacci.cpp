@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-long long fibonacci(long n){
+long fibonacci(long n){
   if (n == 0){
     return 0;
   }
