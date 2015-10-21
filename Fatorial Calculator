@@ -4,7 +4,7 @@ bool Repeat = 1;
 int n;
 char Do;
 
-int FactCal(int x){
+long long FactCal(int x){
   long long R= 1;
   while (x>=1){
     R= R*x;
