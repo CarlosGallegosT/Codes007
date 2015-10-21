@@ -4,7 +4,7 @@ bool Repeat = 1;
 int n;
 char Do;
 
-long longFactCal(int x){
+long long FactCal(int x){
   long long R= 1;
   for (int y=x; y>=1; y--){
     R= R*y;
