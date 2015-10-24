@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-long GCD(long x, long y){
+int GCD(int x, int y){
 if(x==0 & y==0) return 0;
-long C= x%y;
+int C= x%y;
 while (C != 0){
 x = y;
 y = C;
@@ -13,9 +13,9 @@ return y;
 }
 
 int main(){
-  long A;
-  long B;
-  long G;
+  int A;
+  int B;
+  int G;
   std::cout << "This program will calculate the GDC of 2 integers." << std::endl;
   std::cout << "Please enter the first integer: ";
   std:: cin >> A;
