@@ -2,6 +2,7 @@
 using namespace std;
 
 long GCD(long x, long y){
+if(x==0 & y==0) return 0;
 long C= x%y;
 while (C != 0){
 x = y;
