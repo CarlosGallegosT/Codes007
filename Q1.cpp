@@ -22,6 +22,6 @@ int main(){
 float Accuracy;
 cout << "Enter the accuracy for the calculation of e: ";
 cin >> Accuracy;
-cout << "The result would be: " << setprecision(repetition-3)<< CalculateE(Accuracy);
+cout << "The result would be: " << setprecision(repetition)<< CalculateE(Accuracy);
 return 0;
 }
