@@ -1,10 +1,11 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
+int repetition=1;
 
 float CalculateE(float A){
 if (A >= 1) return 2;
 float Difference=1, eValue=0, Factorial;
-int repetition=1;
 while  (Difference > A){
 Factorial = 1;
 for (int a=1; a<repetition;a++){
@@ -21,6 +22,6 @@ int main(){
 float Accuracy;
 cout << "Enter the accuracy for the calculation of e: ";
 cin >> Accuracy;
-cout << "The result would be: " << CalculateE(Accuracy);
+cout << "The result would be: " << setprecision(repetition-3)<< CalculateE(Accuracy);
 return 0;
 }
